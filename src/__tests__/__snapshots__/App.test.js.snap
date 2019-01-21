@@ -53,6 +53,9 @@ LoadedCheerio {
 `;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 1cf438a (added render test)
 exports[`<App /> renders correctly using shallow 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
@@ -71,6 +74,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "function",
     "props": Object {
+<<<<<<< HEAD
       "children": <div
         className="container"
       >
@@ -155,6 +159,10 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": <div
+=======
+      "children": Array [
+        <div
+>>>>>>> 1cf438a (added render test)
           className="container"
         >
           <h2>
@@ -168,9 +176,12 @@ ShallowWrapper {
             </p>
           </div>
         </div>,
-      },
-      "ref": null,
-      "rendered": Object {
+        <Hello />,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
@@ -229,6 +240,113 @@ ShallowWrapper {
         ],
         "type": "div",
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <div
+            className="container"
+          >
+            <h2>
+              CSSTricks Tests
+            </h2>
+            <div
+              className="row"
+            >
+              <p>
+                Loading...
+              </p>
+            </div>
+          </div>,
+          <Hello />,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2>
+                CSSTricks Tests
+              </h2>,
+              <div
+                className="row"
+              >
+                <p>
+                  Loading...
+                </p>
+              </div>,
+            ],
+            "className": "container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "CSSTricks Tests",
+              },
+              "ref": null,
+              "rendered": "CSSTricks Tests",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <p>
+                  Loading...
+                </p>,
+                "className": "row",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Loading...",
+                },
+                "ref": null,
+                "rendered": "Loading...",
+                "type": "p",
+              },
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
       "type": Symbol(react.fragment),
     },
   ],
