@@ -43,7 +43,7 @@ class App extends Component {
     return (
       <React.Fragment>
         <div className="container">
-          <h2>CSSTricks Tests</h2>
+          <h2>React Testing with Jest and Enzyme</h2>
           <div className="row">
             {!isLoading ? (
               users.map(user => {
