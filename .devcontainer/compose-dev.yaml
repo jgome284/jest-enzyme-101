@@ -1,0 +1,27 @@
+# Visit the Docker compose reference guide for more information
+# https://docs.docker.com/compose/compose-file/
+
+# develop app service
+version: '0.1'
+services:
+      
+  # create react app service
+  react-app:
+    # set image name and tag
+    image: react-app:development
+    # configure build properties
+    build: 
+      # set build context for devcontainer
+      context: .
+      # limit build to development stage
+      target: development
+    # bind host to container to persist file changes
+    volumes:
+      - ..:/usr/app:cached
+    # enable allocation of pseudo-TTY to keep service running
+    tty: true
+    # keep standard input open on container
+    stdin_open: true
+    # overrides default command so things don't shut down after the process ends.
+    command: /bin/sh -c "while sleep 1000; do :; done"
+    
