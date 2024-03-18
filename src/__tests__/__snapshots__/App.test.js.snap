@@ -6,6 +6,7 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <App />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
     "getNode": [Function],
     "render": [Function],
     "simulateError": [Function],
@@ -21,7 +22,7 @@ ShallowWrapper {
         className="container"
       >
         <h2>
-          CSSTricks Tests
+          React Testing with Jest and Enzyme
         </h2>
         <div
           className="row"
@@ -40,7 +41,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <h2>
-            CSSTricks Tests
+            React Testing with Jest and Enzyme
           </h2>,
           <div
             className="row"
@@ -59,10 +60,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "CSSTricks Tests",
+            "children": "React Testing with Jest and Enzyme",
           },
           "ref": null,
-          "rendered": "CSSTricks Tests",
+          "rendered": "React Testing with Jest and Enzyme",
           "type": "h2",
         },
         Object {
@@ -104,7 +105,7 @@ ShallowWrapper {
           className="container"
         >
           <h2>
-            CSSTricks Tests
+            React Testing with Jest and Enzyme
           </h2>
           <div
             className="row"
@@ -123,7 +124,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <h2>
-              CSSTricks Tests
+              React Testing with Jest and Enzyme
             </h2>,
             <div
               className="row"
@@ -142,10 +143,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "CSSTricks Tests",
+              "children": "React Testing with Jest and Enzyme",
             },
             "ref": null,
-            "rendered": "CSSTricks Tests",
+            "rendered": "React Testing with Jest and Enzyme",
             "type": "h2",
           },
           Object {
@@ -182,11 +183,18 @@ ShallowWrapper {
     "adapter": ReactSixteenAdapter {
       "options": Object {
         "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
         "lifecycles": Object {
           "componentDidUpdate": Object {
             "onSetState": true,
           },
-          "getDerivedStateFromProps": true,
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": true,
+          },
           "getSnapshotBeforeUpdate": true,
           "setState": Object {
             "skipsComponentDidUpdateOnNullish": true,
@@ -194,6 +202,9 @@ ShallowWrapper {
         },
       },
     },
+    Symbol(enzyme.__providerValues__): undefined,
   },
+  Symbol(enzyme.__providerValues__): Map {},
+  Symbol(enzyme.__childContext__): null,
 }
 `;
