@@ -1,0 +1,6 @@
+# Set automatic line-ending normalization to linux standard for all files 
+* text=auto eol=lf
+# Set Windows standard line ending for command files (cmd) used for scripting
+*.{cmd,[cC][mM][dD]} text eol=crlf
+# Set Windows standard line ending for batch files (bat) used for scripting
+*.{bat,[bB][aA][tT]} text eol=crlf
