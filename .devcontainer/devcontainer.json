@@ -1,0 +1,84 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/docker-existing-docker-compose
+{
+	"name": "react-app",
+
+	// Update the 'dockerComposeFile' list if you have more compose files or use different names.
+	// Add a .devcontainer/docker-compose.yml file with any overrides you need/want to make.
+	"dockerComposeFile": [
+		"./compose-dev.yaml"		
+	],
+
+	// The 'service' property is the name of the service for the container that VS Code should
+	// use. Update this value and .devcontainer/docker-compose.yml to the real service name.
+	"service": "react-app",
+
+	// The optional 'workspaceFolder' property is the path VS Code should open by default when
+	// connected. This is typically a file mount in .devcontainer/docker-compose.yml
+	"workspaceFolder": "/usr/app",
+
+	// Configure tool-specific properties.
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				/*------------------------------------------------------------------------
+				----------------------------LANGUAGE SUPPORT------------------------------
+				------------------------------------------------------------------------*/
+				// Linting for JavaScript
+				"dbaeumer.vscode-eslint",
+				// HTML Boilerplate Quickstart
+				"sidthesloth.html5-boilerplate",
+				// Autocomplete for HTML/XML tags
+				"formulahendry.auto-close-tag",
+				// CSS Intellisense for HTML
+				"ecmel.vscode-html-css",
+				// Peek and go to CSS class definitions
+				"pranaygp.vscode-css-peek",
+				// Autocomplete npm modules in import statements
+				"christian-kohler.npm-intellisense",
+				// Collection of over 130 jQuery Code Snippets
+				"donjayamanne.jquerysnippets",
+
+				/*------------------------------------------------------------------------
+				-----------------------------DEVOPS SUPPORT-------------------------------
+				------------------------------------------------------------------------*/
+				
+				// Git for version control
+				"eamodio.gitlens",
+				// Launch a development local Server with live reload feature for static & dynamic pages
+				"ritwickdey.LiveServer",
+
+				/*------------------------------------------------------------------------
+				----------------------------OTHER UTILITIES-------------------------------
+				------------------------------------------------------------------------*/
+				// Customized icon theme
+				"PKief.material-icon-theme",
+				// Martkdown utilities: Autocomplete, Table-of-Contents, keyboard shortcuts...
+				"yzhang.markdown-all-in-one",
+				// Linting for Markdown 
+				"DavidAnson.vscode-markdownlint",
+				// YAML validation, autocompletion 
+				"redhat.vscode-yaml",
+				// Linter for Shell scripts
+				"timonwong.shellcheck"
+			]
+		}
+	},
+	// Uncomment the next line to run commands after the container is created.
+	"postCreateCommand": "node -v",
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Uncomment the next line if you want start specific services in your Docker Compose config.
+	// "runServices": [],
+
+	// Keep containers running after VS Code shuts down.
+	"shutdownAction": "none"
+
+	// Uncomment to connect as an existing user other than the container default. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "devcontainer"
+}
