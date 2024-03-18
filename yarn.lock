@@ -5099,19 +5099,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"csstricks-tests@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "csstricks-tests@workspace:."
-  dependencies:
-    axios: "npm:^0.18.0"
-    enzyme: "npm:^3.11.0"
-    enzyme-adapter-react-16: "npm:^1.15.8"
-    react: "npm:^16.7.0"
-    react-dom: "npm:^16.7.0"
-    react-scripts: "npm:^5.0.1"
-  languageName: unknown
-  linkType: soft
-
 "damerau-levenshtein@npm:^1.0.8":
   version: 1.0.8
   resolution: "damerau-levenshtein@npm:1.0.8"
@@ -8288,6 +8275,19 @@ __metadata:
   checksum: 10c0/3bbc31545436c6bb4a18841241e62036382a7261b9bb8cdc2823ec942a8a3053f98219b3ec2a4a7920bfba347602c16dd16767d9fece915134aee2e30091165c
   languageName: node
   linkType: hard
+
+"jest-enzyme-101@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "jest-enzyme-101@workspace:."
+  dependencies:
+    axios: "npm:^0.18.0"
+    enzyme: "npm:^3.11.0"
+    enzyme-adapter-react-16: "npm:^1.15.8"
+    react: "npm:^16.7.0"
+    react-dom: "npm:^16.7.0"
+    react-scripts: "npm:^5.0.1"
+  languageName: unknown
+  linkType: soft
 
 "jest-get-type@npm:^27.5.1":
   version: 27.5.1
