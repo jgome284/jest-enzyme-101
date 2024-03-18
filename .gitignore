@@ -30,3 +30,6 @@ npm-debug.log*
 !.yarn/versions
 yarn-debug.log*
 yarn-error.log*
+yarn.lock
+
+src/__tests__/__snapshots__/App.test.js.snap
